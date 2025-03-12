@@ -11,8 +11,8 @@
 </head>
 <body>
     <header>
-    <img src="<?= BASE_URL ?>image/favicon.png" alt="logo" class="logo">
-        <p>Header</p>
+        <a href="/"><img src="<?= BASE_URL ?>image/favicon.png" alt="logo" class="logo"></a>
+        <h1>Header</h1>
     </header>
 
     <nav>

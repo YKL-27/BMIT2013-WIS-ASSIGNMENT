@@ -1,7 +1,7 @@
-﻿</main>
+﻿    </main>
 
-<footer>
-    Epal&copy; <?= date('Y') ?>
-</footer>
+    <footer>
+        Epal&copy; <?= date('Y') ?>
+    </footer>
 </body>
 </html>
