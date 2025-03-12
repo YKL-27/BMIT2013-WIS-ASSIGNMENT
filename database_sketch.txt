@@ -1,0 +1,22 @@
+﻿epaldb 
+- members
+    - username          varchar(20) PK
+    - password          varchar(20)
+    - email             varchar(50)
+    - home address?     varchar(100)
+    - points            int
+    - pfp               
+- admins
+    - username          varchar(20) PK
+    - password          varchar(20)
+    - pfp
+- product
+    - productID         varchar(10) PK
+    - productName       varchar(50)
+    - quantity          int
+- purchase
+    - purchaseID        int
+    - datetime
+    - username*         varchar(20) FK
+    - product*          varchar(10) FK
+    - amount            int

@@ -11,11 +11,13 @@
 </head>
 <body>
     <header>
+    <img src="<?= BASE_URL ?>image/favicon.png" alt="logo" class="logo">
         <p>Header</p>
     </header>
 
     <nav>
         <a href="/">Navbar</a>
+    </nav>
 
     <main>
         <h1><?= $_title ?? 'Untitled' ?></h1>
