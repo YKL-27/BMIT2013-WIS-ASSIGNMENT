@@ -3,6 +3,8 @@ require '../../_base.php';
 include "../../config/db.php";
 // ----------------------------------------------------------------------------
 
+// TODO: Check if username taken
+// TODO: Validate password strength
 if (is_post()) {    // Detect if data is sent by POST method
     
     $username   = req('username');
@@ -39,23 +41,23 @@ if (is_post()) {    // Detect if data is sent by POST method
         $_err['password2'] = 'Password does not match';
     }
 
-    // Validate username
-    if ($username == '') {
+    // Validate email
+    if ($email == '') {
         $_err['email'] = 'Required';
     }
-    else if ((strlen($username) > 50)){
+    else if ((strlen($email) > 50)){
         $_err['email'] = 'Email too long';
     }
-    else if (!preg_match('/^%@%$/', $username)) {
+    else if (!preg_match('/^[a-zA-Z0-9_.±]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/', $email)) {
         $_err['email'] = 'Email format invalid';
     }
     
     // Output
     if (!$_err) { 
-        $stm = $_db->prepare('INSERT INTO member(username, password, email) VALUES(?, ?, ?');
+        $stm = $_db->prepare('INSERT INTO member(username, password, email) VALUES(?, ?, ?)');
         $stm->execute([$username, $password, $email]);
         temp('info', "Registered  $username"); 
-        // redirect('login.php');
+        redirect('login.php');
     }
     
 }
@@ -83,7 +85,7 @@ include '../../_head.php';
     <br>
 
     <label>Email</label>
-    <?= html_password('email') ?>
+    <?= html_reqtext('email') ?>
     <?= err('email') ?>
     <br>
 
