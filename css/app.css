@@ -1,4 +1,4 @@
-﻿/* Colour pallete >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+﻿/* COLOUR PALLETE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 :root{
     --head-foot:            #47ABD8;
     --nav:                  #95D2EC;
@@ -16,7 +16,7 @@
     --title:                #000000;
 }
 
-/* Font >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* FONT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
@@ -27,7 +27,7 @@
     box-sizing: border-box;
 }
 
-/* Layout >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 body {
     margin: 0;
@@ -42,7 +42,7 @@ header, footer {
     background-color: var(--head-foot);
 }
 
-/* Header >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* HEADER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 header { 
     position: fixed;
@@ -75,7 +75,7 @@ header a img {
     height: 36px;
 }
 
-/* Navbar >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* NAVBAR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 nav {
     position: fixed;
     top: 0;
@@ -89,7 +89,6 @@ nav {
 }
 
 nav a {
-    margin-top: 10px;
     padding: 5px 10px;
     color: var(--text);
     background: var(--nav);
@@ -107,36 +106,6 @@ nav div {
     bottom: 1;
 }
 
-/* Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-main {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    flex: 1;
-    padding: 20px 50px;
-    width: 100%;
-    margin-top: 100px;      /* !NOTE: HEIGHT OF HEADER + NAVBAR */
-}
-
-main h1 {
-    margin-top: 0;
-}
-
-/* Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-footer {
-    margin-top: auto;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-/* Error message >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-.err {
-    color: var(--error);
-    font-weight: bold;
-}
-
 .member-auth-buttons {
     position: absolute;
     top: 10px;
@@ -145,39 +114,11 @@ footer {
     gap: 10px;
 }
 
-.poster {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    overflow: hidden; 
-}
-
-.poster img {
-    width: 100%;
-    max-width: 1500px;
-    height: auto;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 1.5s ease-out forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 .nav-links {
     display: flex;
     justify-content: center;
     gap: 20px;
     background-color: #007bff;
-    padding: 10px 0;
     border-radius: 5px;
 }
 
@@ -192,12 +133,12 @@ footer {
 
 .nav-links a:hover {
     background-color: #0056b3;
-    border-radius: 5px;
 }
 
 .search-bar {
     display: flex;
     margin-left: auto;
+    margin-right: auto;
 }
 
 .search-bar input {
@@ -217,4 +158,66 @@ footer {
 
 .search-bar button:hover {
     background-color: #0056b3;
+}
+
+
+/* MAIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+main {
+    top: 0;
+    left: 0;
+    right: 0;
+    flex: 1;
+    padding: 20px 50px;
+    width: 100%;
+    margin-top: 100px;      /* !NOTE: HEIGHT OF HEADER + NAVBAR */
+}
+
+main h1 {
+    margin-top: 0;
+}
+
+/* FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* ERROR MESSAGE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.err {
+    color: var(--error);
+    font-weight: bold;
+}
+
+/* INDEX PAGE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.poster {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+.poster img {
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.container .product img{
+    height: 100px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
