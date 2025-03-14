@@ -4,6 +4,7 @@ include "../../config/db.php";
 // ----------------------------------------------------------------------------
 
 // TODO: Check if username taken
+// TODO: Store username as all lowercase
 // TODO: Validate password strength
 if (is_post()) {    // Detect if data is sent by POST method
     
@@ -54,7 +55,7 @@ if (is_post()) {    // Detect if data is sent by POST method
     
     // Output
     if (!$_err) { 
-        $stm = $_db->prepare('INSERT INTO member(username, password, email) VALUES(?, ?, ?)');
+        $stm = $_db->prepare('INSERT INTO user(username, password, email) VALUES(?, ?, ?)');
         $stm->execute([$username, $password, $email]);
         temp('info', "Registered  $username"); 
         redirect('login.php');
