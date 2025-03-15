@@ -416,6 +416,7 @@ function update_cart($id, $unit) {
 //     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
 // ]);
 // !Database name: epaldb
+
 $_db = new PDO('mysql:dbname=epaldb', 'root', '', [
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
 ]);
