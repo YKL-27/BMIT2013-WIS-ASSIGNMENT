@@ -5,7 +5,7 @@ if (isset($_GET['redirect']) && $_GET['redirect'] === 'login') {
     $_title = 'Redirecting...';
     include '_head.php';
     echo "<h1>Redirecting you to login page...</h1>";
-    redirect('page/member/login.php');
+    redirect('page/login.php');
     exit;
 }
 // ----------------------------------------------------------------------------

@@ -1,10 +1,10 @@
 ﻿<?php
-require '../../_base.php';
+require '../_base.php';
 //-----------------------------------------------------------------------------
 
 // ----------------------------------------------------------------------------
 $_title = 'LOGIN PAGE';
-include '../../_head.php';
+include '../_head.php';
 ?>
 
 <form class="form-login" method="POST">
@@ -18,4 +18,4 @@ include '../../_head.php';
 </form>
 
 <?php
-include '../../_foot.php';
+include '../_foot.php';

@@ -1,6 +1,6 @@
 ﻿<?php
-require '../../_base.php';
-include "../../config/db.php";
+require '../_base.php';
+include "../config/db.php";
 // ----------------------------------------------------------------------------
 
 // TODO: Check if username taken
@@ -65,7 +65,7 @@ if (is_post()) {    // Detect if data is sent by POST method
 
 // ----------------------------------------------------------------------------
 $_title = 'REGISTER';
-include '../../_head.php';
+include '../_head.php';
 ?>
 
 <form method="post" class="form">
@@ -100,4 +100,4 @@ include '../../_head.php';
 
 
 <?php
-include '../../_foot.php';
+include '../_foot.php';
