@@ -106,14 +106,44 @@ nav div {
     bottom: 1;
 }
 
+/* cart and login button >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
 .member-auth-buttons {
     position: absolute;
-    top: 10px;
+    top: 50px;
     right: 20px;
     display: flex;
     gap: 10px;
+    font-size: 30px;
 }
 
+.poster {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+.poster img {
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* navigation bar >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .nav-links {
     display: flex;
     justify-content: center;
@@ -123,18 +153,24 @@ nav div {
 }
 
 .nav-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
-    padding: 10px 15px;
+    padding: 20px 10px;
     transition: background 0.3s;
+    margin-top: -5px;
+    background-color: #007bff;
 }
 
 .nav-links a:hover {
     background-color: #0056b3;
 }
 
+/* search bar >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
 .search-bar {
     display: flex;
     margin-left: auto;
@@ -220,4 +256,35 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
+}
+/* cart page button >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.cartEmpty-buttons{
+    display: flex;
+    gap: 150px;
+}
+
+.cartEmpty-buttons a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.cartEmpty-buttons a:hover {
+    background-color: darkblue;
+}
+
+/* empty cart content >>>>>>>>>>>>>>>>>>>>>>>>>> */
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    min-height: 70vh; 
+    text-align: center;
+    font-size: 30px;
+    gap: 30px;
 }
