@@ -147,7 +147,6 @@ nav div {
     justify-content: center;
     gap: 20px;
     background-color: #007bff;
-    border-radius: 5px;
 }
 
 .nav-links a {
@@ -177,6 +176,7 @@ nav div {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 3px;
+    width: 25vw;
 }
 
 .search-bar button {
@@ -191,7 +191,6 @@ nav div {
 .search-bar button:hover {
     background-color: #0056b3;
 }
-
 
 /* MAIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 main {
