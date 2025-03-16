@@ -9,7 +9,7 @@ $is_logged_in = isset($_SESSION['user']);
 ?>
 
 <div class="cart-container">
-    <img src="image/cartPicture.jpg">
+    <img src="../../image/cartPicture.png">
     <h1>YOUR CART IS EMPTY</h1>
 
     <?php 
