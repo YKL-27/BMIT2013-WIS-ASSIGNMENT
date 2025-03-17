@@ -5,6 +5,7 @@ include "../config/db.php";
 
 // TODO: Check if username taken
 // TODO: Store username as all lowercase
+// TODO: Encode password
 // TODO: Validate password strength
 if (is_post()) {    // Detect if data is sent by POST method
     

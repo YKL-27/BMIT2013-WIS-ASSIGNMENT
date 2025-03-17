@@ -346,7 +346,7 @@ function auth(...$roles) {
         }
     }
     
-    redirect('/login.php');
+    redirect("page/login.php");
 }
 
 // ============================================================================
