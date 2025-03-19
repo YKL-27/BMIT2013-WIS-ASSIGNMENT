@@ -9,15 +9,13 @@ if (isset($_GET['redirect']) && $_GET['redirect'] === 'login') {
     exit;
 }
 // ----------------------------------------------------------------------------
-$_title = 'Epal Offical Store';
+$_title = 'Epal Official Store';
 include '_head.php';
 ?>
 
 <div class="poster">
     <img src="image/posterphone.jpg">
 </div>
-
-
 
 
 
