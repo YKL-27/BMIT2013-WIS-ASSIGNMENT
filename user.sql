@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `epaldb`
 --
+CREATE DATABASE IF NOT EXISTS `epaldb` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `epaldb`;
 
 -- --------------------------------------------------------
 

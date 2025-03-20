@@ -4,37 +4,11 @@ Task Assignment: https://docs.google.com/document/d/1-MoV_A-Yx5AFHLbbEgq7k2VUa68
 Deadline: Week 12
 <br><br>
 
-# Todo:
+# Note
+- Remember to always pull the latest version from main
+- Better do work other branches then merge to main
+- If got new version want to merge notify in chat
+- If got question about unified design ask in chat
+- Leave comments and notes for other member and tutor to read
+- If dont want use GitHub use other method and send to chat for merging
 
-## Security
-- Roles: Admin + Member
-- Login + Logout
-- Password Hashing
-- Password Reset
-
-## User Profile
-- Profile Update
-- Password Update
-- Profile Photo Upload
-
-## Member Maintenance
-- Member Listing + Detail (Admin)
-- Basic Searching (Admin)
-- Member Registration
-- Profile Photo Upload
-
-## Product Maintenance (Admin)
-- Product Listing + Detail
-- Basic Searching
-- Product CRUD
-- Product Photo Upload
-
-## Shopping Cart (Member)
-- Product Listing + Detail
-- Basic Searching
-- Shopping Cart
-- Checkout + Create Order (Payment not included)
-
-## Order Maintenance
-- Order History + Detail (Member)
-- Order Listing + Detail (Admin)

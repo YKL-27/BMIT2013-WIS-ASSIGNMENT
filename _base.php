@@ -346,7 +346,7 @@ function auth(...$roles) {
         }
     }
     
-    redirect('/login.php');
+    redirect("page/login.php");
 }
 
 // ============================================================================
@@ -432,6 +432,7 @@ function is_exists($value, $table, $field) {
     $stm->execute([$value]);
     return $stm->fetchColumn() > 0;
 }
+
 
 // ============================================================================
 // Global Constants and Variables
