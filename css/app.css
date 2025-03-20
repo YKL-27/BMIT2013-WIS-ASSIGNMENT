@@ -382,4 +382,75 @@ footer {
     color: red;
     text-align: right;
   }
+  /* admin header */
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .logo h2 {
+    margin: 0;
+  }
+  
+  .admin-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+  }
+  
+  .nav-group {
+    position: relative;
+  }
+  
+  .nav-toggle {
+    background-color: #34495e;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .nav-menu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #34495e;
+    padding: 10px;
+    border-radius: 6px;
+    z-index: 999;
+    width: 180px;
+  }
+  
+  .nav-menu a {
+    display: block;
+    color: #bdc3c7;
+    padding: 6px 10px;
+    text-decoration: none;
+  }
+  
+  .nav-menu a:hover {
+    background-color: #3d5d75;
+    color: #ffffff;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .logout-btn {
+    background-color: #e74c3c;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logout-btn:hover {
+    background-color: #c0392b;
+  }
   
