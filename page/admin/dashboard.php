@@ -23,7 +23,7 @@ include 'admin_header.php';
       <p><strong>85</strong></p>
     </div>
     <div class="dashboard-card orange">
-      <h3>👤 Manage Users</h3>
+      <h3>👤 Total Users</h3>
       <p><strong>30</strong></p>
     </div>
   </section>
@@ -67,10 +67,14 @@ include 'admin_header.php';
 </div>
 
 
-<section style="margin-top: 30px;">
-    <a href="members.php"><button>👥 Manage Members</button></a>
-    <a href="stocks.php"><button>📦 Manage Stocks</button></a>
-    <a href="sales.php"><button>📈 Sales Reports</button></a>
-  </section>
+
+
+<div style="width: 100%; display: block; margin: 40px 0; text-align: center;">
+  <a href="members.php"><button>👥 Manage Members</button></a>
+  <a href="stocks.php"><button>📦 Manage Stocks</button></a>
+  <a href="sales.php"><button>📈 Sales Reports</button></a>
 </div>
+
+
+
 <?php include '../../_foot.php'; ?>
