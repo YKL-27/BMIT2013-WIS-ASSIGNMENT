@@ -9,6 +9,40 @@ $is_logged_in = isset($_SESSION['user']);
 $cart = get_cart();
 ?>
 
+<style>
+    /* cart page button >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.cartEmpty-buttons{
+    display: flex;
+    gap: 150px;
+}
+
+.cartEmpty-buttons a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.cartEmpty-buttons a:hover {
+    background-color: darkblue;
+}
+
+/* empty cart content >>>>>>>>>>>>>>>>>>>>>>>>>> */
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    min-height: 70vh; 
+    text-align: center;
+    font-size: 30px;
+    gap: 30px;
+}
+</style>
+
 <div class="cart-container">
     <?php if (!empty($cart)): ?>
 

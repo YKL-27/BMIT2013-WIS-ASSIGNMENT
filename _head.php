@@ -15,13 +15,13 @@
         <a href="/"><img src="<?= BASE_URL ?>image/favicon.png" alt="logo" class="logo"></a>
         <nav class="nav-links">
             <a href="<?= BASE_URL ?>index.php">Home</a>
-            <a href="<?= BASE_URL ?>products.php">Our Product</a>
-            <a href="<?= BASE_URL ?>about.php">About</a>
-            <a href="<?= BASE_URL ?>contact.php">Contact</a>
+            <a href="<?= BASE_URL ?>page/products/products.php">Our Product</a>
+            <a href="<?= BASE_URL ?>page/about.php">About</a>
+            <a href="<?= BASE_URL ?>page/contact.php">Contact</a>
         </nav>
         <div class="search-bar">
             <form action="<?= BASE_URL ?>search.php" method="GET">
-                <input type="text" name="query" placeholder="Search products..." required>
+                <?php html_search('query', "placeholder='Search products...' required"); ?>
                 <button type="submit">Search</button>
             </form>
         </div>
