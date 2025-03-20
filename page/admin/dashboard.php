@@ -56,16 +56,16 @@ include 'admin_header.php';
     </table>
   </div>
 
-  <div class="stat-table">
-    <h3>Member Login Statistics</h3>
-    <table>
-      <tr><td>Registered Logins:</td><td class="red">3240 times</td></tr>
-      <tr><td>Sina Logins:</td><td class="red">1130 times</td></tr>
-      <tr><td>Alipay Logins:</td><td class="red">1130 times</td></tr>
-      <tr><td>QQ Logins:</td><td class="red">1130 times</td></tr>
-    </table>
-  </div>
-</section>
+<div class="stat-table">
+  <h3>System Usage Statistics</h3>
+  <table>
+    <tr><td>Total Page Views:</td><td class="red">12,500 views</td></tr>
+    <tr><td>Unique Visitors:</td><td class="red">3,200 users</td></tr>
+    <tr><td>Active Sessions:</td><td class="red">180 sessions</td></tr>
+    <tr><td>Avg. Session Duration:</td><td class="red">5 min 42 sec</td></tr>
+  </table>
+</div>
+
 
 <section style="margin-top: 30px;">
     <a href="members.php"><button>👥 Manage Members</button></a>
