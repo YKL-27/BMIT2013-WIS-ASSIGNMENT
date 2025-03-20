@@ -6,6 +6,6 @@
     <div class="admin-nav">
         <a href="dashboard.php">Dashboard</a>
         <a href="manage_users.php">Users</a>
-        <a href="logout.php">Logout</a>
+        <a href="../../index.php?logout=1">Logout</a>
     </div>
 </div>
