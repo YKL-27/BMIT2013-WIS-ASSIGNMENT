@@ -27,7 +27,7 @@
         </div>
         <div class="member-auth-buttons">
             <a href="<?= BASE_URL ?>page/products/cart.php" class="btn cart-btn">🛒 Cart</a>
-            <a href="<?= BASE_URL ?>page/member/login.php" class="btn">👤Login</a>
+            <a href="<?= BASE_URL ?>page/login.php" class="btn">👤Login</a>
         </div>
     </header>
 

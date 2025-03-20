@@ -63,7 +63,7 @@ $cart = get_cart();
 
             <?php 
                 if (!$is_logged_in) {
-                    echo '<a href="../member/login.php">Login</a>';
+                    echo '<a href="../login.php">Login</a>';
                 }
             ?>
         </div>
