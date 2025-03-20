@@ -15,7 +15,7 @@
         <a href="/"><img src="<?= BASE_URL ?>image/favicon.png" alt="logo" class="logo"></a>
         <nav class="nav-links">
             <a href="<?= BASE_URL ?>index.php">Home</a>
-            <a href="<?= BASE_URL ?>page/products/products.php">Our Product</a>
+            <a href="<?= BASE_URL ?>page/products/productPage.php">Our Product</a>
             <a href="<?= BASE_URL ?>page/about.php">About</a>
             <a href="<?= BASE_URL ?>page/contact.php">Contact</a>
         </nav>
