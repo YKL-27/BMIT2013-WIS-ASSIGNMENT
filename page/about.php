@@ -5,8 +5,9 @@ $_title = 'ABOUT';
 include '../_head.php';
 ?>
 
-<?php
-?>
+<h1>Our Company</h1>
+
+<h1>Our Staff</h1>
 
 
 <?php
