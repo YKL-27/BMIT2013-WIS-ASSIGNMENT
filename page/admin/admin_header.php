@@ -5,7 +5,7 @@
     </div>
     <div class="admin-nav">
         <a href="dashboard.php">Dashboard</a>
-        <a href="members.php">Users</a>
+
         <a href="../../index.php?logout=1">Logout</a>
     </div>
 </div>
