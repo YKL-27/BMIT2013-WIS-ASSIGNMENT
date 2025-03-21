@@ -26,6 +26,17 @@ $products = $stm->fetchAll();
         padding: 10px;
         background-color: #fff;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .product-card a{
+        display: block;
+        text-decoration: none;
+    }
+
+    .product-card:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     }
 
     .product-card img {
@@ -36,8 +47,9 @@ $products = $stm->fetchAll();
     }
 
     .product-card h3 {
-        font-size: 16px;
+        font-size: 20px;
         margin-top: 10px;
+        color: black;
     }
 </style>
 
